@@ -42,7 +42,8 @@ namespace SalesWebMVC
                         builder.MigrationsAssembly("SalesWebMVC")));
 
             services.AddScoped<SeendingService>(); //registra o serviço no sistema
-            services.AddScoped<SellerService>(); // regitra serviço SellerService
+            services.AddScoped<SellerService>(); // registra serviço SellerService
+            services.AddScoped<DepartmentService>(); //registra o serviço DepartamentService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
